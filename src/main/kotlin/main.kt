@@ -5,6 +5,8 @@ fun main() {
     val likes = readLine()?. toInt() ?: return
     val people = if (likes == 0)
         ("... а никому не понравилось")
+    else if ((likes % 100) == 11 || likes == 11)
+        ("людям")
     else if ((likes % 10) == 1)
         ("человеку")
     else ("людям")
